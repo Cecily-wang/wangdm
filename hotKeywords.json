@@ -1,0 +1,80 @@
+{
+    "code": "200",
+    "data": [
+      {
+        "keyword": "口罩",
+        "schemeUrl": "",
+        "highlight": 1,
+        "extra": {
+          "taskId": "54665596",
+          "materialId": "54644903",
+          "taskType": 1,
+          "resourcesId": 4,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "",
+          "materialName": "口罩专区",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null,
+          "schemeUrl": null,
+          "itemFrom": 0,
+          "materialContentFrom": 1,
+          "rcmdSort": false,
+          "alg_personalized": null
+        }
+      },
+      {
+        "keyword": "蚕丝子母被",
+        "schemeUrl": "https://you.163.com/topic/v1/pub/tLjAaOEPWV4c.html?keyword=%E8%9A%95%E4%B8%9D%E5%AD%90%E6%AF%8D%E8%A2%AB",
+        "highlight": 0,
+        "extra": {
+          "taskId": "54666010",
+          "materialId": "54652538",
+          "taskType": 1,
+          "resourcesId": 5,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "蚕丝子母被",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null,
+          "schemeUrl": null,
+          "itemFrom": 0,
+          "materialContentFrom": 1,
+          "rcmdSort": false,
+          "alg_personalized": null
+        }
+      },
+      {
+        "keyword": "百香果特价",
+        "schemeUrl": "https://act.you.163.com/act/pub/w6EVNJVqeLn4.html?keyword=%E7%99%BE%E9%A6%99%E6%9E%9C%E7%89%B9%E4%BB%B7",
+        "highlight": 0,
+        "extra": {
+          "taskId": "54666145",
+          "materialId": "54652625",
+          "taskType": 1,
+          "resourcesId": 6,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "百香果特价",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null,
+          "schemeUrl": null,
+          "itemFrom": 0,
+          "materialContentFrom": 1,
+          "rcmdSort": false,
+          "alg_personalized": null
+        }
+      }
+    ]
+  }

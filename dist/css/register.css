@@ -1,0 +1,84 @@
+.main {
+  width: 1090px;
+  margin: auto; }
+  .main .main-c {
+    padding: 100px 200px 0 200px; }
+  .main .title {
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 30px; }
+    .main .title h4 {
+      font-size: 30px;
+      font-weight: 500; }
+    .main .title .login,
+    .main .title .back {
+      color: #29231c; }
+    .main .title .shu {
+      padding: 0 15px; }
+  .main .register {
+    width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #f0eaea; }
+    .main .register .form-group {
+      margin-bottom: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.42857143;
+      color: #333; }
+    .main .register .txt {
+      border-radius: 15px 15px 0 0;
+      font-size: 22px;
+      font-weight: 300;
+      text-align: center;
+      background-color: #e5ee43;
+      border-color: #bce8f1;
+      padding: 20px 15px; }
+    .main .register .wrap {
+      margin: 20px auto;
+      padding: 10px 60px 60px 60px; }
+    .main .register span {
+      padding: 0 15px; }
+    .main .register label {
+      display: block;
+      margin-bottom: 4px; }
+    .main .register input {
+      width: 100%;
+      height: 25px;
+      outline: 0;
+      border-radius: 5px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      border: 1px solid #ccc; }
+    .main .register .submit {
+      padding: 10px 0;
+      border-radius: 5px;
+      background-color: #e5ee43;
+      text-align: center;
+      cursor: pointer; }
+    .main .register .alert {
+      padding: 5px;
+      text-align: center;
+      color: #a94442;
+      background-color: #f2dede;
+      border-color: #ebccd1;
+      margin-bottom: 12px;
+      border: 1px solid transparent;
+      border-radius: 4px; }
+    .main .register .true {
+      padding: 5px;
+      text-align: center;
+      color: #0e6138;
+      background-color: #ace7c2;
+      border-color: #7ef7b1;
+      margin-bottom: 12px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      display: none; }
+
+body {
+  background: url(../images/login-ground.jpg) no-repeat center center; }
+
+html,
+body {
+  height: 100%; }

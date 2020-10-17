@@ -1,0 +1,1177 @@
+$bor : 1px solid red;
+
+@mixin center {
+    width: 1090px;
+    margin: auto;
+}
+
+// 顶部导航
+.topnav {
+    height: 35px;
+    background-color: #333;
+}
+
+.topnav-c {
+    @include center;
+    height: 36px;
+
+    ul li {
+        float: left;
+        height: 36px;
+
+        a {
+            font-size: 12px;
+            line-height: 36px;
+            color: #c7c7c7;
+            font-size: 12px;
+        }
+
+        span {
+            padding: 0 10px;
+            color: #5b5b5b;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .topnav-arrow {
+            height: 5px;
+            width: 11px;
+            margin-left: 10px;
+            background: url(../images/Sprite-1.png) no-repeat 0 -2702px;
+        }
+
+        .topnav-phone {
+            margin-right: 8px;
+            height: 11px;
+            width: 7px;
+            background: url(../images/Sprite-2.png) no-repeat 0px 0px;
+        }
+    }
+}
+
+.topnav-left {
+    width: 280px;
+    height: 36px;
+
+    span {
+        padding: 6px 8px;
+        background: url(../images/Sprite-1.png) no-repeat 0 -5672px;
+    }
+
+    a {
+        font-size: 12px;
+        line-height: 36px;
+        color: #cb974e;
+        text-decoration: underline;
+    }
+}
+
+// 头部
+.header-c {
+    height: 140px;
+    @include center;
+    position: relative;
+
+    .header-logo {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 212px;
+        height: 60px;
+        background: url(../images/Sprite-2.png) no-repeat 0 -298px;
+    }
+}
+
+.header-carWrap {
+    position: absolute;
+    right: 0;
+    margin-top: 11px;
+    margin-left: 49px;
+}
+
+.header-cart {
+    padding: 8px 0px;
+    cursor: pointer;
+    width: 134px;
+    height: 20px;
+    border: 1px solid #CC9756;
+    border-radius: 19px;
+
+    .headerIcon-cart {
+        margin-left: 22px;
+        height: 17px;
+        width: 18px;
+        background: url(../images/Sprite-2.png) no-repeat 0 -148px;
+    }
+
+    span {
+        display: inline-block;
+        color: #CC9756;
+        font-size: 14px;
+    }
+
+    .header-cart-num {
+        margin-left: 10px;
+        color: #fff;
+        width: 19px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background: url(../images/Sprite-2.png) no-repeat 0 -51px;
+    }
+}
+
+.header-search {
+    width: 532px;
+    height: 36px;
+    float: right;
+    position: absolute;
+    right: 184px;
+    top: 26px;
+}
+
+.header-search-l {
+    width: 441px;
+    height: 34px;
+    border: 1px solid #CC9756;
+    border-right: 0;
+    border-radius: 50px 0px 0px 50px;
+    position: relative;
+
+    i {
+        position: absolute;
+        left: 18px;
+        top: 10px;
+        height: 14px;
+        width: 14px;
+        background: url(../images/Sprite-2.png) no-repeat 0 -518px;
+    }
+
+    input {
+        position: absolute;
+        left: 38px;
+        height: 32px;
+        width: 396px;
+        outline: 0;
+        border: 0;
+    }
+
+    div {
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        font-size: 14px;
+        color: #9b9b9b;
+    }
+}
+
+.header-search-r {
+    width: 90px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #cc9656;
+    color: #fff;
+}
+
+.hotKeyword {
+    position: absolute;
+    font-size: 12px;
+    top: 72px;
+    left: 395px;
+
+    span {
+        padding: 0 5px;
+        color: #9b9b9b;
+    }
+
+    .hot1 {
+        color: #CC9756;
+    }
+
+    .hot2 {
+        color: #9b9b9b;
+    }
+}
+
+.header-tab {
+    position: absolute;
+    bottom: 0;
+
+    .header-tab-li {
+        margin-left: 12px;
+        float: left;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        // margin-right: 52px;
+        padding: 0 17px;
+
+    }
+
+    // .header-tab-li:last-child {
+    //     margin-right: 0;
+    // }
+    .header-subTab-col0 {
+        width: 1202px;
+        left: -56px;
+        right: auto;
+    }
+
+    .header-subTab-col1 {
+        width: 1646px;
+        left: -278px;
+        right: auto;
+    }
+
+    .header-subTab-col2 {
+        width: 1202px;
+        left: -56px;
+        right: auto;
+    }
+
+    .header-subTab-col3 {
+        width: 1202px;
+        left: -56px;
+        right: auto;
+    }
+
+    .header-subTab-col4 {
+        width: 1202px;
+        left: -56px;
+        right: auto;
+    }
+
+    .header-subTab-col5 {
+        width: 1054px;
+        left: auto;
+        right: 0px;
+    }
+
+    .header-subTab-col6 {
+        width: 1202px;
+        left: auto;
+        right: -56px;
+    }
+
+    .header-subTab-col7 {
+        width: 1202px;
+        left: auto;
+        right: -56px;
+    }
+
+    .header-tab-li:first-child a {
+        padding-bottom: 8px;
+        border-bottom: 3px solid #CC9756;
+    }
+
+    .header-subTab-active {
+        padding-bottom: 8px;
+        border-bottom: 3px solid #CC9756;
+    }
+
+    .header-subTab {
+        top: 25px;
+        position: absolute;
+        z-index: 9;
+        padding: 14px 20px 20px;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, .1);
+
+        li {
+            width: 126px;
+            margin-right: 24px;
+            float: left;
+        }
+
+        .header-subTab-div1 {
+            width: 124px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        a {
+            width: 124px;
+            position: relative;
+
+            img {
+                width: 50px;
+                height: 50px;
+                // float: left;
+                border: 0;
+            }
+
+            p {
+                position: absolute;
+                top: 50%;
+                left: 60px;
+                transform: translateY(-50%);
+                font-weight: normal;
+                font-size: 14px;
+                // float: right;
+                width: 70px;
+                line-height: 20px;
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+// 详情部分
+.detailWrap-c {
+    @include center;
+    overflow: hidden;
+    height: 700px;
+
+    .m-crumbs {
+        font-size: 12px;
+        color: #333;
+        line-height: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .arrow-right-hollow {
+            margin: 0 5px;
+            height: 11px;
+            width: 5px;
+            display: inline-block;
+            background: url(../images/Sprite-6.png) no-repeat 0 -1129px;
+        }
+    }
+
+    .content {
+        .slide {
+            width: 430px;
+            float: left;
+            position: relative;
+
+            .picsWrap {
+                height: 428px;
+            }
+
+            .zoom {
+                display: none;
+                .zoomPic {
+                    //小图
+                    position: absolute;
+                    width: 428px;
+                    height: 428px;
+                    img {
+                        display: block;
+                        width: 428px;
+                        height: 428px;
+                        background-color: #f4f4f4;
+                    }
+                }
+
+                #mark {
+                    display: none;
+                    width: 200px;
+                    height: 200px;
+                    background-color: rgb(243, 228, 160);
+                    opacity: 0.5;
+                    filter: (opacity=50);
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                }
+                #big {
+                    width: 400px;
+                    height: 400px;
+                    border: 1px solid rgb(192, 190, 190);
+                    position: absolute;
+                    left: 440px;
+                    top: 0px;
+                    z-index: 2;
+                    display: none;
+                    overflow: hidden;
+                }
+    
+                #big img {
+                    position: absolute;
+                    width: 856px;
+                    height: 856px;
+                }
+    
+
+            }
+
+
+            
+            .zoom-search {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                height: 30px;
+                width: 30px;
+
+                i {
+                    height: 30px;
+                    width: 30px;
+                    background: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-s33e647f656-a21248af33.png?imageView&type=webp) no-repeat 0 -6654px;
+
+                }
+            }
+        }
+
+        .info {
+            float: right;
+            width: 620px;
+            word-break: break-all;
+            word-wrap: break-word;
+            position: relative;
+
+            .intro {
+                margin-bottom: 20px;
+            }
+
+            .name {
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+
+                .name-txt1 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+
+                .percent {
+                    color: #E36844;
+                    font-size: 20px;
+                }
+
+                .name-txt2 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #999;
+                }
+            }
+
+            .info-main {
+                overflow: hidden;
+                background-color: #f5f3ef;
+                border-top: 1px dotted #dedede;
+                border-bottom: 1px dotted #dedede;
+                padding: 0 0 13px;
+                line-height: 24px;
+                font-size: 13px;
+                position: relative;
+
+                .priceWrap {
+                    height: 45px;
+                    margin-bottom: 5px;
+                    overflow: hidden;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .priceTxt {
+                    line-height: 30px;
+                    margin-top: 16px;
+                    width: 55px;
+                    font-size: 13px;
+                    float: left;
+                    color: #666;
+                    margin-left: 10px;
+                }
+
+                .priceNum {
+                    font-size: 18px;
+                    margin-top: 13px;
+                    height: 30px;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 30px;
+                    margin-left: 2px;
+                    color: #d7282d;
+                }
+            }
+
+            .vip {
+                box-sizing: border-box;
+                background: url(https://yanxuan.nosdn.127.net/3f69356f49ba270f91a7d537ba082169.png?imageView&type=webp) no-repeat;
+                margin-bottom: 3px;
+                position: relative;
+                height: 33px;
+                width: 488px;
+                line-height: 33px;
+                margin-top: 2px;
+                margin-left: 66px;
+                border-radius: 2px;
+                display: flex;
+                align-items: center;
+            }
+
+            .vip-content {
+                cursor: pointer;
+                margin-right: 20px;
+                color: #FFF1D2;
+
+                .discount {
+                    float: left;
+                    background-image: linear-gradient(123deg, #F1C698 0, #C3945B 100%);
+                    line-height: 33px;
+                    font-size: 13px;
+                    color: #333;
+                    padding: 0 4px;
+                    border-top-left-radius: 2px;
+                    border-bottom-left-radius: 2px;
+                    -webkit-clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+                    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+                }
+
+                .leftText {
+                    margin-left: 6px;
+                    font-size: 13px;
+                }
+
+                .spmcPrice {
+                    margin-left: 2px;
+                    vertical-align: -2px;
+                    font-size: 16px;
+                    color: #F3CA84;
+                }
+
+                i {
+                    height: 14px;
+                    width: 14px;
+                    vertical-align: -2px;
+                    margin-left: 4px;
+                    background: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-common-s3a41f3ecfc-21ea424885.png?imageView&type=webp) no-repeat 0 -1735px;
+                }
+            }
+
+            .rightTxt {
+                font-size: 13px;
+                color: #F3CA84;
+                cursor: pointer;
+            }
+        }
+
+        .sale {
+            margin-top: 2px;
+            margin-bottom: 3px;
+            overflow: visible;
+            position: relative;
+            line-height: 24px;
+            font-size: 13px;
+
+            .sale-label {
+                line-height: 28px;
+                width: 55px;
+                font-size: 13px;
+                float: left;
+                color: #666;
+                margin-left: 10px;
+            }
+
+            .saleLine {
+                margin-left: 65px;
+                height: 28px;
+                position: relative;
+                line-height: 24px;
+                font-size: 13px;
+
+                .saleLine-span1 {
+                    margin-right: 10px;
+                    margin-left: 0;
+                    background-image: linear-gradient(270deg, #FF8659 0, #FE2C30 100%);
+                    line-height: 20px;
+                    color: #fff !important;
+                    padding: 0 5px;
+                    background-color: #e36844;
+                    display: inline-block;
+                    height: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .m-feedbackBonus {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            padding-left: 10px;
+            margin-bottom: 3px;
+            line-height: 24px;
+            font-size: 13px;
+
+            .left {
+                width: 55px;
+                color: #666;
+            }
+
+            .right {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+            }
+
+            ._price {
+                color: #c43c3b;
+                margin-right: 4px;
+                margin-left: 2px;
+            }
+
+            .questionMark {
+                background: url(http://yanxuan.nosdn.127.net/333a52f7d59a48d10cc04481cda7c31b.png?imageView&type=webp);
+                background-size: contain;
+                width: 14px;
+                height: 14px;
+                cursor: pointer;
+            }
+        }
+
+        .pointInfo {
+            margin-bottom: 3px;
+            position: relative;
+            line-height: 24px;
+            font-size: 13px;
+
+            .label {
+                width: 55px;
+                font-size: 13px;
+                float: left;
+                color: #666;
+                margin-left: 10px;
+            }
+
+            .freightText {
+                cursor: pointer;
+            }
+        }
+
+        .color {
+            margin-top: 20px;
+            margin-left: 10px;
+            overflow: hidden;
+
+            .color-c {
+                line-height: 50px;
+                float: left;
+                font-size: 12px;
+                color: #666;
+                width: 54px;
+            }
+
+            .cont {
+                position: relative;
+                width: 550px;
+                float: left;
+
+                li {
+                    float: left;
+                    position: relative;
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                    vertical-align: middle;
+                    padding: 1px;
+
+                    a {
+                        margin: 0;
+                        line-height: 26px;
+                        border: 2px solid #b4a078;
+                        color: #333;
+                        width: 50px;
+                        height: 50px;
+                        float: left;
+                        cursor: pointer;
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        i {
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            background: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-s33e647f656-a21248af33.png?imageView&type=webp);
+                            background-position: 0 -5712px;
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .f-clearfix {
+            margin-top: 10px;
+            margin-left: 10px;
+            overflow: hidden;
+
+            .number {
+                line-height: 30px;
+                float: left;
+                font-size: 12px;
+                color: #666;
+                width: 54px;
+                white-space: normal;
+            }
+
+            .f-left {
+                margin-bottom: 3px;
+                position: relative;
+                float: left;
+            }
+
+            .u-selnum {
+                display: inline-block;
+                border: 1px solid #ddd;
+                overflow: hidden;
+
+                input {
+                    box-sizing: border-box;
+                    border-radius: 0;
+                    border: 0;
+                    width: 60px;
+                    margin: 0;
+                    font-size: 12px;
+                    text-align: center;
+                    color: #333;
+                    position: relative;
+                    float: left;
+                    width: 36px;
+                    height: 30px;
+                    line-height: 28px;
+                    background: #fff;
+
+                }
+            }
+
+            .less {
+                border-right: 1px solid #ddd;
+                position: relative;
+                float: left;
+                width: 36px;
+                height: 30px;
+                line-height: 28px;
+                background: #fff;
+            }
+
+            .z-dis {
+                cursor: not-allowed;
+            }
+
+            .hx {
+                background: #d3d3d3;
+                top: 15px;
+                left: 12px;
+                width: 10px;
+                position: absolute;
+                height: 2px;
+                overflow: hidden;
+
+            }
+
+            .more {
+                border-left: 1px solid #ddd;
+                position: relative;
+                float: left;
+                width: 36px;
+                height: 30px;
+                line-height: 28px;
+                background: #fff;
+                cursor: pointer;
+            }
+
+            .sx {
+                top: 11px;
+                left: 16px;
+                height: 10px;
+                position: absolute;
+                width: 2px;
+                overflow: hidden;
+                background: #999;
+                line-height: 28px;
+            }
+        }
+
+        .btns {
+            margin-left: 12px;
+            margin-top: 30px;
+            font-size: 0;
+            -webkit-text-size-adjust: none;
+            overflow: hidden;
+
+            a {
+                margin-right: 10px;
+                width: 168px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                color: #b4a078;
+                border: 1px solid #b4a078;
+                background-color: #f5f3ef;
+                border-radius: 2px;
+                padding: 0;
+                letter-spacing: normal;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .btns-a2 {
+                color: #fff;
+                border: 1px solid #b4a078;
+                background-color: #b4a078;
+
+                i {
+                    margin: 12px 8px 0 0;
+                    background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/cart-sb9c1d935ed-136a897db8.png?imageView&type=webp);
+                    background-position: 0 -68px;
+                    height: 21px;
+                    width: 21px;
+                    background-repeat: no-repeat;
+
+                }
+            }
+        }
+
+        .w-collectZone {
+            position: relative;
+            display: inline-block;
+            height: 49px;
+            width: 50px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            vertical-align: middle;
+            text-align: center;
+            cursor: pointer;
+
+            .top {
+                position: relative;
+                overflow: hidden;
+                height: 24px;
+                text-align: center;
+                cursor: pointer;
+
+                span {
+                    display: inline-block;
+                    margin-top: 6px;
+                    background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-web/p/20150730/style/img/x1/icon-normal-s33e647f656-a21248af33.png?imageView&type=webp);
+                    background-position: 0 -696px;
+                    height: 15px;
+                    width: 16px;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .bottom {
+                height: 23px;
+                font-size: 13px;
+                line-height: 23px;
+                color: #999;
+            }
+        }
+
+        .slide-list ul {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            margin-top: 14px;
+
+            li {
+                width: 76px;
+                height: 76px;
+            }
+
+            a,
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .slide-active {
+            margin: 0;
+            border: 2px solid #b4a078;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// 底部
+.footer-1 {
+    height: 268px;
+}
+
+.footer-1-c {
+    @include center;
+    height: 205px;
+    padding-top: 60px;
+    padding-bottom: 34px;
+
+    .footer-1-left,
+    .footer-1-center,
+    .footer-1-right {
+        width: 33.33333%;
+        border-right: 1px solid #e9e9e9;
+        float: left;
+        height: 204px;
+        box-sizing: border-box;
+    }
+
+    .footer-1-left {
+
+        text-align: center;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        a {
+            border-radius: 2px;
+            width: 80px;
+            height: 75px;
+            font-size: 14px;
+            background-color: #fff;
+            padding-top: 25px;
+            text-align: center;
+            border: 1px solid #E8E8E8;
+        }
+
+        .footer-1-left-a2 {
+            margin-left: 29px;
+        }
+
+        i {
+            height: 26px;
+            width: 31px;
+        }
+    }
+
+
+    .footer-1-left-i1 {
+        background: url(../images/Sprite-3.png) no-repeat 0 -290px;
+    }
+
+    .footer-1-left-i2 {
+        background: url(../images/Sprite-3.png) no-repeat 0 -97px;
+    }
+
+    .footer-1-center-div1 {
+        text-align: center;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 28px;
+        }
+
+        p {
+            text-align: left;
+            font-size: 13px;
+            line-height: 23px;
+            margin-bottom: 22px;
+        }
+    }
+
+    .footer-1-center {
+        padding: 0 37px;
+        text-align: center;
+    }
+
+    .footer-1-center-div2 {
+        p {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 32px;
+        }
+
+        .footer-1-center-div3 {
+            text-align: left;
+            float: left;
+
+            div {
+                margin-right: 15px;
+                position: relative;
+                padding-bottom: 10px;
+            }
+
+            .footer-1-center-div3-i1 {
+                background: url(../images/Sprite-3.png) no-repeat 0 -470px;
+                height: 32px;
+                width: 32px;
+            }
+
+            .footer-1-center-div3-i2 {
+                background: url(../images/Sprite-3.png) no-repeat 0 -428px;
+                height: 32px;
+                width: 32px;
+            }
+
+            .footer-1-center-div3-i3 {
+                height: 32px;
+                width: 32px;
+                background: url(../images/Sprite-3.png) no-repeat 0 -326px;
+            }
+        }
+    }
+
+    .footer-1-right {
+        border: 0;
+        text-align: center;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        .footer-1-right-pic {
+            width: 104px;
+            height: 104px;
+            margin: 0 auto;
+        }
+
+        .footer-1-right-txt {
+            color: #b4a078;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+    }
+}
+
+.footer-2 {
+    height: 268px;
+    padding-top: 37px;
+    background-color: #414141;
+
+}
+
+.footer-2-c {
+    @include center;
+    height: 268px;
+
+    ul {
+        margin-bottom: 30px !important;
+        padding-left: 17px;
+        height: 51px;
+
+        li {
+            float: left;
+
+        }
+
+        .footer-2-c-li2 {
+            margin: 0 122px;
+        }
+
+        .footer-2-c-li3 {
+            margin-right: 122px;
+        }
+
+        div {
+            color: #fff;
+            font-size: 18px;
+            line-height: 51px;
+            display: inline-block;
+            vertical-align: middle;
+
+            i {
+                margin-right: 17px;
+                height: 50px;
+                width: 50px;
+                margin-right: 17px;
+            }
+
+            .footer-2-c-i1 {
+                background: url(../images/Sprite-3.png) no-repeat 0 -134px;
+            }
+
+            .footer-2-c-i2 {
+                background: url(../images/Sprite-3.png) no-repeat 0 -368px;
+            }
+
+            .footer-2-c-i3 {
+                background: url(../images/Sprite-3.png) no-repeat 0 0;
+            }
+
+            .footer-2-c-i4 {
+                background: url(../images/Sprite-3.png) no-repeat 0 -194px;
+            }
+        }
+    }
+
+    .footer-2-c-line {
+        height: 1px;
+        margin-bottom: 27px;
+        background-color: #4f4f4f;
+        border: 0;
+    }
+
+    .footer-2-c-nav {
+        font-size: 12px;
+        text-align: center;
+
+        a {
+            color: #999;
+        }
+
+        span {
+            color: #999;
+            margin: auto 13px;
+        }
+    }
+
+    .footer-2-c-copyright {
+        text-align: center;
+        white-space: nowrap;
+        margin: 11px 0;
+
+        span {
+            color: #999;
+            margin-right: 15px;
+            font-size: 12px;
+        }
+
+        .footer-2-c-lastspan {
+            margin: 0px;
+        }
+    }
+
+    .footer-2-c-police {
+        text-align: center;
+        padding-bottom: 11px;
+
+        span {
+            color: #999;
+            margin-right: 15px;
+            font-size: 12px;
+        }
+    }
+
+    img {
+        width: 23px;
+        height: 25px;
+        margin-top: -5px;
+    }
+}
