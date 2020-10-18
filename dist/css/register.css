@@ -75,6 +75,9 @@
       border: 1px solid transparent;
       border-radius: 4px;
       display: none; }
+      .alert-danger{
+        display: none;
+      }
 
 body {
   background: url(../images/login-ground.jpg) no-repeat center center; }

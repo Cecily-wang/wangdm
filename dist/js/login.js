@@ -1,35 +1,34 @@
-define(['jquery', "jquery-cookie"], function($){
+define(["jquery"],function($){
     function loginSend(){
-        $(".submit").click(function(){
+        $(".wrap .submit").click(function(){
             $.ajax({
-                type: "post",
-                url:"./php1/login.php",
-                data: {
-                    username:$(".username").val(),
-                    password:$(".password").val()
+                type:"post",
+                url:"../php1/login.php",
+                data:{
+                    username:$(".register-item").eq(0).val(),
+                    password:$(".register-item").eq(1).val()
                 },
-                success: function(result){
+                success:function(result){
+                    //  alert(result);
                     var obj = JSON.parse(result);
                     if(obj.code){
-                        $(".wrap").find(".alert-danger").attr("class", "alert");
+                        $(".register").find(".alert-danger").addClass("alert");
                     }else{
-                        $(".wrap").find(".alert-danger").attr("class", "true");
-                        //将已经登录的用户名存储在cookie中
-                        $.cookie("username", obj.username, {
-                            expires: 7
-                        })
+                        $(".register").find(".alert-danger").addClass("true");
                     }
-                   $(".wrap").show().find(".alerta").html(obj.msg);
+                    $(".register").find(".alert-danger").show();
+                    $(".register").find(".alert-danger").html(obj.message);
                 },
-                error: function(msg){
+                error:function(msg){
                     console.log(msg);
                 }
-    
             })
-        })
-        
+        }) 
     }
-    return {
-        loginSend: loginSend
+
+
+
+    return{
+        loginSend:loginSend
     }
 })

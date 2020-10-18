@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/register.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <script src="js/require.js" defer async="true" data-main="js/main.js"></script>
+    <script src="js/require.js" defer async="true" data-main="js/main3.js"></script>
 </head>
 
 <body>
@@ -30,15 +30,23 @@
                 <div class="txt">登<span></span>录</div>
                 <div class="wrap">
                     <div class="form-group">
-                    <label for="username">用户名：</label>
-                    <input type="text" class="username">
-                </div>
-                <div class="form-group">
-                    <label for="password">密码：</label>
-                    <input type="text" class="password">
-                </div>
-                <div class="true alert-danger" role="alert">...</div>
-                <div class="submit">立即登录</div>
+                        <label for="username">用户名：
+                            <!-- <input type="text" class="username"> -->
+                            <input type="text" name="username" placeholder="输入用户名" class="register-item">
+                        </label>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码：
+                            <!-- <input type="text" class="password"> -->
+                            <input type="password" name="password" placeholder="设置密码(6-16位数字和字母)" class="register-item">
+                        </label>
+
+                    </div>
+                    <div class="alert-danger" role="alert">
+                        111
+                    </div>
+                    <div class="submit">立即登录</div>
                 </div>
                
             </div>
